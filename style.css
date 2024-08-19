@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(#0077b6, #90e0ef);
+}
+
+.score {
+  margin-top: 40px !important;
+  background-color: #e9d8a6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #001219;
+  margin: auto;
+  width: 20%;
+}
+
+.hands {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hand img {
+  margin-top: -30px;
+  width: 350px;
+  height: auto;
+  transition: transform 0.5s;
+}
+
+.choices {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.choices img {
+  width: 100px;
+  height: auto;
+  margin-top: -150px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.choices img:hover {
+  transform: translateY(-10px);
+}
+
+#result {
+  background-color: #e9d8a6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+  font-weight: 600;
+  color: #001219;
+  width: 300px;
+}
+
+@media (max-width: 768px){
+    .score{
+        width: 200px;
+        font-size: 18px;
+    }
+    .hand img{
+        margin-top: 80px;
+        width: 150px;
+    }
+    .choices img{
+        margin-top: 20px;
+    }
+}
